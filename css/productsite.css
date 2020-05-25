@@ -156,9 +156,18 @@
     color: white;
     background-color: #934398;
     border-radius: 30px;
-    border-color: #FAF7F2;
+    border-color: #FAF7F2;  
+    border-width: thin;
    
 
+    }
+    
+    
+    .header-text{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: var(--main-textfont);
     }
     
     
