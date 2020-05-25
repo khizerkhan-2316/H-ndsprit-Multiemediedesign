@@ -135,7 +135,8 @@
     }
     
     #product-picture{
-    width: 80%;    
+    width:  99.9%;    
+    margin-top: 30px;
     }
     
     .buy{
@@ -168,6 +169,7 @@
     flex-flow: row wrap;
     justify-content: center;
     font-family: var(--main-textfont);
+    font-size: 12px;
     }
     
     
