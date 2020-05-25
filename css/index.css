@@ -3,11 +3,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
 
 /* CSS root (variabler) */
 
 :root{
---main-headingfont: 'Poppins', sans-serif;   
+--main-headingfont: 'Poppins', sans-serif; 
+--main-textfont: 'Noto Serif', serif;
 }
 
 
@@ -151,6 +154,75 @@
     border-color: #FAF7F2;
     }
     
+    .box-1{
+    width: 99.9%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    font-family: var(--main-textfont);
+    margin-top: 10px;
+    }
+    
+    .box-1 p{
+    margin-left: 4%;
+    margin-top: 30px;
+    line-height: 1.5;
+    margin-right: 4%;
+    color: #6D6E71;
+    }
+    
+    .box-1 img{
+    width: 100px; 
+    margin-top: 30px;
+    }
+    
+    .box-2{
+    width: 99.9%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    font-family: var(--main-textfont);  
+    margin-top: 30px;
+    }
+    
+    .box-2 p{
+    margin-left: 4%;
+    margin-right: 4%;
+    line-height: 1.5;
+    color: #6D6E71;
+    margin-top: 30px;
+    }
+    
+    .box-2 img{
+    width: 100px;
+    }
+    
+    .box-3{
+    width: 99.9%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    font-family: var(--main-textfont);   
+    }
+    
+    .box-3 p{
+    margin-left: 4%;
+    margin-right: 4%;
+    line-height: 1.5;
+    color: #6D6E71;    
+    margin-top: 20px;
+    }
+    
+    .box-3 img{
+    width: 110px;
+    margin-top: 20px;
+    }
     
 }
 
