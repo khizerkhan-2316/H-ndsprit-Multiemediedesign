@@ -168,9 +168,98 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    font-family: var(--main-textfont);
-    font-size: 10px;
+    font-family: var(--main-headingfont);
+    font-size: 11px;
     }
     
+    
+    .middle{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    
+    
+    }
+    
+    .middle li{
+    list-style-type: none;
+    font-family: var(--main-textfont);
+    }
+    
+    .menu{
+    width: 80%;    
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    }
+    
+    .item{
+        border-top: 1px solid black;
+        overflow: hidden;
+    }
+    
+    .btn{
+    display: block;
+    padding: 16px 20px;
+    outline: 1px solid black;
+    outline-style: solid;
+    }
+    
+    .btn:before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    }
+    
+    .btn i{
+    margin-right: 10px;    
+    }
+    
+    
+    .smenu{
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+    }
+    
+    .smenu p{
+    display: block;
+    padding: 16px 26px;
+    margin: 4px 0;
+    position: relative;
+    }
+    
+    
+    .smenu p:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+    }
+    
+    .smenu p:hover:before{
+    opacity: 1;    
+    }
+    
+    .item:target .smenu{
+    max-height: 10em;    
+    }
+    
+    .other-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    }
+    
+    .other-content h2{
+    font-family: var(--main-headingfont);    
+    }
     
 }
