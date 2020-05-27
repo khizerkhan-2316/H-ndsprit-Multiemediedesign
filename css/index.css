@@ -326,6 +326,18 @@
     margin-left: 4%;
     }
     
+    .donation-box button:hover{
+            background-color:gray;
+
+    }
+    
+    .banner button:hover{
+     background-color:gray;
+    border-color: gray;
+
+    }
+    
+    
 }
 
 

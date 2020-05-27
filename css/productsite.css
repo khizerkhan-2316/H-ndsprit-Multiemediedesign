@@ -287,6 +287,9 @@ height: auto;
     width: 95%;    
     }
     
+    footer ul{
+    }
+    
     .logos img{
     width: 40px;    
     border-radius: 40px;
@@ -308,4 +311,6 @@ height: auto;
     padding: 0;
     margin-left: 4%;
     }
+    
+  
 }

@@ -1,8 +1,213 @@
-body{
-margin: 0;
-padding: 0;
+/* Goole fonte listet forneden: */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+
+
+/* CSS root (variabler) */
+
+:root{
+--main-headingfont: 'Poppins', sans-serif; 
+--main-textfont: 'Noto Serif', serif;
 }
 
+
+@media screen and (max-width:500px){
+    body{
+    margin: 0;
+    padding: 0;
+    background-color:#FAF7F2;
+    }   
+    
+    
+    /* styling til den men mobile menu-bar */
+    .menu li, a {
+    color: #6D6E71;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--main-headingfont);
+    }
+ 
+    
+    .header{
+        background-color: #FFFFFF;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    
+    .header ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+        
+    }
+    
+    .header ul a{
+    display: block;
+    outline: 1px solid #6D6E71;
+    outline-style:solid;
+    padding: 20px;
+  
+    }
+    
+    .header ul a:hover{
+    background-color:#FAF7F2;
+    }
+    
+    .header .logo{
+    float: left;
+    display: block;
+    }
+    
+    .header .menu{
+    clear: both;
+    max-height: 0;
+    transition:max-height .2s ease-out;
+        
+    }
+    
+    #logo{
+    width: 100px;
+    margin-left: 18px;
+    margin-top: 10px;
+    }
+    
+    .header .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    }
+    
+    
+    .header .menu-icon .nav-icon{
+    background-color: #6D6E71;
+    display: block;
+    height: 2px;
+    top: 5px;
+    width: 18px;
+    position: relative;
+    transition:background 2.s ease-out;
+    }
+    
+    .header .menu-icon .nav-icon:before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition:all .2 ease-out;
+    top: 10px;
+    background:#6D6E71;
+    }
+    
+    .header .menu-icon .nav-icon:after{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 5px;
+    position: absolute;
+    transition:all .2 ease-out;
+    background:#6D6E71;
+        
+    /* check her */
+    }
+    
+    .header .menu-button{
+    display: none;
+        
+    }
+    
+    .header .menu-button:checked ~ .menu{
+    max-height: 350px;    
+    }
+    
+    
+    .header-text{
+     display: flex;
+    flex-flow: row wrap;
+    margin-left: 4%;
+    height: auto;
+    align-items: center;
+    
+    }
+    
+    .header-text h1{
+    margin-top: 100px;
+    font-family: var(--main-headingfont);
+    color: #6D6E71;
+    }
+    
+    
+    .image-placer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .image-placer img{
+    width: 92%;
+    }
+    
+    .form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    }
+    
+    form{
+    background-color: #E8866C;   
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    }
+    
+    form input{
+    background-color: #FAF7F2;
+    border-color:#FAF7F2; 
+    font-family: var(--main-textfont);
+    width: 40%;
+  margin-left: 4%;
+    margin-top: 4%;
+    padding: 4px;
+    }
+    .form hr{
+    width: 90%; 
+    margin-top: 20px;
+    }
+    
+    #vejnavn, #mobilnummer, #telefonnummer, #email, #cpr-nr{
+     width: 88%;    
+    }
+    
+    #nulstil{
+    margin-bottom: 15px;    
+    }
+    
+    #godkend{
+    margin-left: 40px;    
+    }
+    
+    
+    .form h5{
+    font-family: var(--main-headingfont);
+    margin-left: 4%;
+    margin-bottom: -10px;
+
+    }
+    
+}
 
 
 
