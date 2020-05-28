@@ -142,6 +142,7 @@
     margin-top: 100px;
     font-family: var(--main-headingfont);
     color: #6D6E71;
+    font-size: 22px;
     }
     
     
@@ -232,6 +233,7 @@ height: auto;
     font-family: var(--main-headingfont);
     margin-bottom: 0;
     text-align: center;
+    font-size: 21px;
 
     }
     
