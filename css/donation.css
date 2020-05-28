@@ -207,6 +207,51 @@
 
     }
     
+    .container1{
+    width: 100%;
+height: auto;
+   display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    }
+    
+    .class1{
+    width: 50%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: color: #6D6E71;
+    }
+    
+    .class1 h2{
+    font-family: var(--main-headingfont);
+    margin-bottom: 0;
+    text-align: center;
+
+    }
+    
+    
+    .class1 p{
+    text-align: center;
+    font-family: var(--main-textfont);
+    }
+    
+    .hr-line{
+    width: 100%;
+    
+    }
+    
+    .hr-line hr{
+    width: 60%; 
+    }
+    
+
+    
 }
 
 
