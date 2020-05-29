@@ -14,7 +14,7 @@
 }
 
 
-@media screen and (max-width:500px){
+@media screen and (max-width:767px){
     body{
     margin: 0;
     padding: 0;
@@ -340,9 +340,347 @@
     
 }
 
+    
+    @media only screen and (min-width:768px) and (max-width:1024px) 
+    {
+        
+         body{
+    margin: 0;
+    padding: 0;
+    background-color:#FAF7F2;
+    }   
+    
+    
+    /* styling til den men mobile menu-bar */
+    .menu li, a {
+    color: #6D6E71;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--main-headingfont);
+    }
+ 
+    
+    .header{
+        background-color: #FFFFFF;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    
+    .header ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+        
+    }
+    
+    .header ul a{
+    display: block;
+    outline: 1px solid #6D6E71;
+    outline-style:solid;
+    padding: 20px;
+  
+    }
+    
+    .header ul a:hover{
+    background-color:#FAF7F2;
+    }
+    
+    .header .logo{
+    float: left;
+    display: block;
+    }
+    
+    .header .menu{
+    clear: both;
+    max-height: 0;
+    transition:max-height .2s ease-out;
+        
+    }
+    
+    #logo{
+    width: 100px;
+    margin-left: 18px;
+    margin-top: 10px;
+    }
+    
+    .header .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    }
+    
+    
+    .header .menu-icon .nav-icon{
+    background-color: #6D6E71;
+    display: block;
+    height: 2px;
+    top: 5px;
+    width: 18px;
+    position: relative;
+    transition:background 2.s ease-out;
+    }
+    
+    .header .menu-icon .nav-icon:before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition:all .2 ease-out;
+    top: 10px;
+    background:#6D6E71;
+    }
+    
+    .header .menu-icon .nav-icon:after{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 5px;
+    position: absolute;
+    transition:all .2 ease-out;
+    background:#6D6E71;
+        
+    /* check her */
+    }
+    
+    .header .menu-button{
+    display: none;
+        
+    }
+    
+    .header .menu-button:checked ~ .menu{
+    max-height: 350px;    
+    }
+    
+    
+ /* main styles nu */
+    
+    .banner{
+    width: 99.9%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+    }
+    
+    #banner-picture{
+    width:99.9%;
+    }
+    
+    .banner h1{
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 32px;
+    text-align: center;
+    text-align: center;
+    margin-top: -600px;
+    
+    }
+    
+    .banner button{
+    color: black;
+    background-color: #FAF7F2;
+    font-family: 'Poppins', sans-serif; 
+    border-color: #FAF7F2;
+    font-size: 30px;
+    
+    }
+    
+    .banner a{
+    margin-top: -100px;
+    
 
-@media only screen and (min-width: 1024px) {}
-@media only screen and (min-width:768px) and (max-width:1023px) {}
-@media screen and (min-width:501px){}
+    }
+    
+    .box-1{
+    width: 99.9%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    font-family: var(--main-textfont);
+    margin-top: 10px;
+    }
+    
+    .box-1 p{
+    margin-left: 4%;
+    margin-top: 30px;
+    line-height: 1.5;
+    margin-right: 4%;
+    color: #6D6E71;
+    }
+    
+    .box-1 img{
+    width: 100px; 
+    margin-top: 30px;
+    }
+    
+    .box-2{
+    width: 99.9%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    font-family: var(--main-textfont);  
+    margin-top: 30px;
+    }
+    
+    .box-2 p{
+    margin-left: 4%;
+    margin-right: 4%;
+    line-height: 1.5;
+    color: #6D6E71;
+    margin-top: 30px;
+    }
+    
+    .box-2 img{
+    width: 100px;
+    }
+    
+    .box-3{
+    width: 99.9%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    font-family: var(--main-textfont);   
+    }
+    
+    .box-3 p{
+    margin-left: 4%;
+    margin-right: 4%;
+    line-height: 1.5;
+    color: #6D6E71;    
+    margin-top: 20px;
+    }
+    
+    .box-3 img{
+    width: 110px;
+    margin-top: 20px;
+    }
+    
+    #hr-line{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #6D6E71;   
+    }
+    
+    .donation-box{
+    width: 99.9%;
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .donation-box h2{
+    line-height: 1.2;
+    color: #6D6E71;
+    font-family: var(--main-headingfont);
+    margin-left: 4%;
+    margin-right: 4%;
+    }
+    
+    .donation-box img{
+    width: 100px;    
+    }
+    
+    .donation-box a{
+    color:#6D6E71;
+    background-color:#FAF7F2;
+    font-family: var(--main-textfont);
+    }
+    
+    .donation-box button{
+    background-color: #FAF7F2;
+    font-family: var(--main-textfont);
+    padding-right: 20px;
+    padding-left: 20px;
+    border-color: #6D6E71;
+    border-width: thin;
+    }
+    
+    
+    /* footer styling */
+    
+    footer{
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    flex-flow:  row wrap;
+    justify-content: space-around;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
+    }
+    
+    footer ul li{
+    font-family: var(--main-headingfont);
+    color: #6D6E71;
+    list-style: none;
+    }
+    
+    #hr-lines{
+    width: 95%;    
+    }
+    
+    .logos img{
+    width: 40px;    
+    border-radius: 40px;
+    padding: 5px;
+    }
+    
+    .copyright{
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: #6D6E71;
+    font-family: var(--main-textfont);
+    font-size: 11px;
+    }
+    
+    .copyright p{
+    margin: 0;
+    padding: 0;
+    margin-left: 4%;
+    }
+    
+    .donation-box button:hover{
+            background-color:gray;
+
+    }
+    
+    .banner button:hover{
+     background-color:gray;
+    border-color: gray;
+
+    }
+    
+        
+        
+/* ipad styling: */
+}
+
+
+
+
+@media only screen and (min-width: 1025px) {
+    /* laptop styling */ 
+    
+    
+}
 
     

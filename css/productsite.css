@@ -14,7 +14,7 @@
 }
 
 
-@media screen and (max-width:500px){
+@media screen and (max-width:767px){
     body{
     margin: 0;
     padding: 0;
@@ -172,6 +172,10 @@
     font-size: 11px;
     }
     
+    .header-text h1{
+    text-align: center;
+    }
+    
     
    
     
@@ -179,6 +183,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    text-align: center;
     }
     
     .other-content h2{
@@ -250,7 +255,9 @@
 height: auto;
    display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    border: 1px solid black;
+    justify-content: center;
+align-content: center;
     }
     
     .class1{
@@ -258,10 +265,12 @@ height: auto;
     height: auto;
     margin-top: 2%;
     margin-bottom: 2%;
+    
+    
     }
     
     .class1 img{
-    99.9%;
+    width:100%;
     }
     
     #3{
@@ -311,6 +320,312 @@ height: auto;
     padding: 0;
     margin-left: 4%;
     }
+    }
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    body{
+    margin: 0;
+    padding: 0;
+    background-color:#FAF7F2;
+    }   
     
+    
+    /* styling til den men mobile menu-bar */
+    .menu li, a {
+    color: #6D6E71;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--main-headingfont);
+    }
+ 
+    
+    .header{
+        background-color: #FFFFFF;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    
+    .header ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+        
+    }
+    
+    .header ul a{
+    display: block;
+    outline: 1px solid #6D6E71;
+    outline-style:solid;
+    padding: 20px;
   
+    }
+    
+    .header ul a:hover{
+    background-color:#FAF7F2;
+    }
+    
+    .header .logo{
+    float: left;
+    display: block;
+    }
+    
+    .header .menu{
+    clear: both;
+    max-height: 0;
+    transition:max-height .2s ease-out;
+        
+    }
+    
+    #logo{
+    width: 100px;
+    margin-left: 18px;
+    margin-top: 10px;
+    }
+    
+    .header .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    }
+    
+    
+    .header .menu-icon .nav-icon{
+    background-color: #6D6E71;
+    display: block;
+    height: 2px;
+    top: 5px;
+    width: 18px;
+    position: relative;
+    transition:background 2.s ease-out;
+    }
+    
+    .header .menu-icon .nav-icon:before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition:all .2 ease-out;
+    top: 10px;
+    background:#6D6E71;
+    }
+    
+    .header .menu-icon .nav-icon:after{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 5px;
+    position: absolute;
+    transition:all .2 ease-out;
+    background:#6D6E71;
+        
+    /* check her */
+    }
+    
+    .header .menu-button{
+    display: none;
+        
+    }
+    
+    .header .menu-button:checked ~ .menu{
+    max-height: 350px;    
+    }
+    
+    .picture{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    }
+    
+    #product-picture{
+    width:  400px;    
+    margin-top: 30px;
+    }
+    
+    .buy{
+    width: 60%;    
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-family: var(--main-textfont);
+    align-items: center;
+    margin-top: -70px;
+    border: 1px solid black;
+    }
+    
+    .buy button{
+    font-family: var(--main-textfont);
+    color: white;
+    background-color: #934398;
+    border-radius: 30px;
+    border-color: #FAF7F2;  
+    border-width: thin;
+   
+
+    }
+    
+    
+    .header-text{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: var(--main-headingfont);
+    font-size: 11px;
+    }
+    
+    .header-text h1{
+    text-align: center;
+    }
+    
+    
+   
+    
+    .other-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    }
+    
+    .other-content h2{
+    font-family: var(--main-headingfont);   
+    font-size: 20px;
+    }
+    
+    .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    }
+    
+    .product-description{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+     border-bottom: 1px solid gray;
+    
+
+    
+    }
+    
+    .product-description h3{
+    margin-left: 5%;
+    font-family: var(--main-headingfont);
+    
+    }
+    
+    .content h5{
+    font-family: var(--main-headingtext);
+    font-size: 11px;
+    }
+    
+    .content{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    color: gray;
+    font-family: var(--main-textfont);
+    font-size: 11px;
+    margin-left: 5%;
+    line-height: 2;
+    display: none;
+    }
+    
+    .content p{
+    font-family: var(--main-textfont);   
+    }
+    
+    .product-description:hover .content{
+    display: block;    
+    }
+    
+   
+     
+    .product-description:nth-last-child(1){
+    border: none;
+        
+    
+    }
+   
+.container1{
+    width: 100%;
+height: auto;
+   display: flex;
+    flex-flow: column wrap;
+    border: 1px solid black;
+    justify-content: center;
+align-content: center;
+    }
+    
+    .class1{
+    width: 50%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+    
+    }
+    
+    .class1 img{
+    width:100%;
+    }
+    
+    #3{
+    }
+    
+    footer{
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    flex-flow:  row wrap;
+    justify-content: space-around;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
+    }
+    
+    footer ul li{
+    font-family: var(--main-headingfont);
+    color: #6D6E71;
+    list-style: none;
+    }
+    
+    #hr-lines{
+    width: 95%;    
+    }
+    
+    footer ul{
+    }
+    
+    .logos img{
+    width: 40px;    
+    border-radius: 40px;
+    padding: 5px;
+    }
+    
+    .copyright{
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: #6D6E71;
+    font-family: var(--main-textfont);
+    font-size: 11px;
+    }
+    
+    .copyright p{
+    margin: 0;
+    padding: 0;
+    margin-left: 4%;
+    }
 }
