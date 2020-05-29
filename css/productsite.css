@@ -149,7 +149,6 @@
     font-family: var(--main-textfont);
     align-items: center;
     margin-top: -70px;
-    border: 1px solid black;
     }
     
     .buy button{
@@ -255,7 +254,6 @@
 height: auto;
    display: flex;
     flex-flow: column wrap;
-    border: 1px solid black;
     justify-content: center;
 align-content: center;
     }
@@ -457,7 +455,6 @@ align-content: center;
     font-family: var(--main-textfont);
     align-items: center;
     margin-top: -70px;
-    border: 1px solid black;
     }
     
     .buy button{
@@ -563,7 +560,6 @@ align-content: center;
 height: auto;
    display: flex;
     flex-flow: column wrap;
-    border: 1px solid black;
     justify-content: center;
 align-content: center;
     }
@@ -629,3 +625,5 @@ align-content: center;
     margin-left: 4%;
     }
 }
+
+
