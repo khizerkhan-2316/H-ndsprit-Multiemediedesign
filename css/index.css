@@ -15,6 +15,11 @@
 
 
 @media screen and (max-width:767px){
+    
+    #searchbar, #list, .web-navbar-list{
+    display: none;
+    }
+    
     body{
     margin: 0;
     padding: 0;
@@ -343,6 +348,10 @@
     
     @media only screen and (min-width:768px) and (max-width:1024px) 
     {
+        
+        #searchbar, #list, .web-navbar-list{
+    display: none;
+    }
         
          body{
     margin: 0;
@@ -678,8 +687,99 @@
 
 
 @media only screen and (min-width: 1025px) {
-    /* laptop styling */ 
+
+    .menu-button, .menu-icon, .menu{
+    display: none;
+    }
     
+    body{
+    margin: 0;
+    padding: 0;
+    background-color:#FAF7F2;
+    }
+    
+  .header{
+        background-color: #FFFFFF;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
+        width: 100%;
+        z-index: 3;
+        display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    
+    #logo{
+    width: 100px;   
+    margin-left: 40px;
+    }
+    
+    .header ul li img{
+    width: 30px;    
+    }
+    
+    .header ul li{
+    list-style: none;
+    font-family: var(--main-headingfont);
+    padding: 10px;
+    display: flex;
+    flex-flow:  row wrap;
+    align-content: center;
+    color: #6D6E71;
+    }
+    
+    .header ul li:hover{
+    color: darkgray;
+    }
+    
+    #list{
+    display: flex;
+    flex-flow: row wrap;
+   width: 20%;
+    align-content: center;
+    justify-content: center;
+    }
+    
+    #searchbar{
+    width: 40%;
+    font-family: var(--main-headingfont);
+    border:2px solid #6D6E71;
+    margin-left: 170px;
+    }
+    
+    .web-navbar-list{
+    width: 100%;
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 30px;
+    align-content: center;
+    }
+    
+    .web-navbar-list ul{
+    display: flex;
+    height: 20px;
+    width: 70%;
+    justify-content: space-around;
+    margin-right: 5%;
+    }
+    
+    .web-navbar-list ul li a{
+    font-family: var(--main-headingfont);
+    color: #6D6E71;
+    text-decoration: none;
+    }
+    
+    .web-navbar-list ul li a:hover{
+    color: lightgray;
+    }
+    
+    .banner img{
+    width: 99.9%;    
+    }
     
 }
 
