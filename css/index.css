@@ -305,6 +305,10 @@
     list-style: none;
     }
     
+    footer ul li:hover{
+    color: darkgray;    
+    }
+    
     #hr-lines{
     width: 95%;    
     }
@@ -640,6 +644,10 @@
     color: #6D6E71;
     list-style: none;
     }
+        
+        footer ul li:hover{
+    color: darkgray;    
+    }
     
     #hr-lines{
     width: 95%;    
@@ -926,6 +934,10 @@
     font-family: var(--main-headingfont);
     color: #6D6E71;
     list-style: none;
+    }
+    
+    footer ul li:hover{
+    color: darkgray;    
     }
     
     #hr-lines{

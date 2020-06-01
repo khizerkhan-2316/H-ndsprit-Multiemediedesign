@@ -276,6 +276,10 @@ height: auto;
     list-style: none;
     }
     
+    footer ul li:hover{
+    color: darkgray;    
+    }
+    
     #hr-lines{
     width: 95%;    
     }
@@ -569,6 +573,10 @@ height: auto;
     list-style: none;
     }
     
+    footer ul li:hover{
+    color: darkgray;    
+    }
+    
     #hr-lines{
     width: 95%;    
     }
@@ -832,6 +840,10 @@ height: auto;
     font-family: var(--main-headingfont);
     color: #6D6E71;
     list-style: none;
+    }
+    
+    footer ul li:hover{
+    color: darkgray;    
     }
     
     #hr-lines{
