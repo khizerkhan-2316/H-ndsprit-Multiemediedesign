@@ -16,6 +16,10 @@
 
 @media screen and (max-width:767px){
     
+     .dn img{
+    display: none;
+    }
+    
      #searchbar, #list, .web-navbar-list{
     display: none;
     }
@@ -327,6 +331,9 @@ align-content: center;
     }
 
 @media only screen and (min-width:768px) and (max-width:1024px){
+    .dn{
+    display: none;
+    }
     
      #searchbar, #list, .web-navbar-list{
     display: none;
@@ -899,8 +906,8 @@ height: auto;
     
     .logos img{
     width: 40px;    
-    border-radius: 40px;
     padding: 5px;
+    border-radius: 40px;
     }
     
     .copyright{
